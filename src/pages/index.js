@@ -34,10 +34,10 @@ export default function Home() {
       <TransactionEffect />
 
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light dark:bg-dark">
-        <Layout className="pt-0">
-          <div className="flex justify-between items-center w-full h-full">
+        <Layout className="pt-0 md:pt-16 sm:pt-8">
+          <div className="flex lg:flex-col justify-between items-center w-full h-full">
             <motion.div
-              className="w-1/2"
+              className="w-1/2 md:w-full"
               initial={{ x: "-100vw" }} // Vị trí ban đầu của hình ảnh
               animate={{ x: 0 }} // Vị trí kết thúc của hình ảnh
               transition={{ duration: 1 }} // Thời gian di chuyển của hình ảnh
@@ -45,26 +45,30 @@ export default function Home() {
               <Image
                 src={Project}
                 alt="Giang"
-                className="w-full h-auto object-cover dark:grayscale"
+                priority
+                sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                className="w-full h-auto object-cover dark:grayscale lg:hidden md:inline-block md:w-full"
               />
             </motion.div>
-            <div className="w-1/2 flex flex-col justify-center items-center self-center">
+            <div className="w-1/2 lg:text-center flex flex-col justify-center items-center self-center lg:w-full">
               <AnimateText
                 text={"Turning Vision Into Reality With Code And Design. "}
-                className="!text-6xl !text-left"
+                className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:text-3xl "
               />
-              <p className="my-4 text-base font-medium">
+              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 As a skilled full-stack developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in React.js and
                 web development.
               </p>
-              <div className="flex items-center self-start mt-2">
+              <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href={"/dummy.pdf"}
+                  href={"/DuongTruongGiang_CV1.pdf"}
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded text-sm
-                  font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-black dark:border-light
+                  font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-black dark:border-light md:p-2 md:px-4 md:text-base
                   "
                   download={true}
                 >
@@ -73,7 +77,7 @@ export default function Home() {
                 <Link
                   href={"/contact"}
                   target="_blank"
-                  className="capitalize font-medium text-lg text-dark underline ml-4 dark:text-light"
+                  className="capitalize font-medium text-lg text-dark underline ml-4 dark:text-light md:text-base"
                 >
                   Contact
                 </Link>

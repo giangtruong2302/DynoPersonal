@@ -67,6 +67,10 @@ const FeatureArticle = ({ title, img, time, sumary, link }) => {
       <Link href={""} className="w-full inline-block cursor-pointer rounded-lg">
         <FramerImage
           src={img}
+          priority
+          sizes="(max-width: 768px) 100vw,
+        (max-width: 1200px) 50vw,
+        33vw"
           alt=""
           className="w-full h-auto rounded-lg"
           whileHover={{ scale: 1.05 }}
