@@ -34,7 +34,6 @@ const CustomizeLink = ({ href, title, className = "" }) => {
 const CustomizeMobileLink = ({ href, title, className = "", toogle }) => {
   const router = useRouter();
   const handleClick = () => {
-    toogle();
     router.push(href);
   };
   return (
