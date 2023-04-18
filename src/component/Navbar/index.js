@@ -61,23 +61,23 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="top-0 z-1000 w-full px-32 py-8 flex items-center justify-between shadow-lg dark:text-light relative lg:px-16 md:px-12 sm:px-8">
+    <header className="top-2 z-1000 w-full px-32 py-8 flex items-center justify-between shadow-lg relative lg:px-16 md:px-12 sm:px-8 text-light dark:text-dark">
       <button
-        className="hidden lg:flex flex-col justify-center items-center fixed z-50"
+        className="hidden lg:flex flex-col justify-center items-center fixed z-50 bg-dark dark:bg-light p-4 w-14 h-14 rounded-full"
         onClick={handleOpen}
       >
         <span
-          className={`bg-dark transition-all duration-300 ease-in-out dark:bg-light block h-0.5 w-6 rounded-sm  ${
+          className={`bg-light transition-all duration-300 ease-in-out dark:bg-dark block h-0.5 w-6 rounded-sm  ${
             isOpen ? "rotate-45 translate-y-1" : "-translate-y-0.5"
           }`}
         ></span>
         <span
-          className={`bg-dark transition-all duration-300 ease-in-out dark:bg-light block h-0.5 w-6 rounded-sm my-0.5 ${
+          className={`bg-light transition-all duration-300 ease-in-out dark:bg-dark block h-0.5 w-6 rounded-sm my-0.5 ${
             isOpen ? "opacity-0" : "opacity-1000"
           }`}
         ></span>
         <span
-          className={`bg-dark transition-all duration-300 ease-in-out dark:bg-light block h-0.5 w-6 rounded-sm ${
+          className={`bg-light transition-all duration-300 ease-in-out dark:bg-dark block h-0.5 w-6 rounded-sm ${
             isOpen ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
           }`}
         ></span>
