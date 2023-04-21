@@ -40,7 +40,7 @@ const MovingImg = ({ title, img, link }) => {
         ref={imgRef}
         src={img}
         alt={title}
-        className="w-96 h-auto rounded-lg absolute z-10 hidden"
+        className="w-96 h-auto rounded-lg absolute z-10 hidden sm:w-36"
         whileInView={{ opacity: 1, transition: { duration: 0.4 } }}
         initial={{ opacity: 0 }}
       />
@@ -52,10 +52,14 @@ const Article = ({ img, title, date, link }) => {
     <motion.li
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4"
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4
+      sm:text-sm md:text-base
+      "
     >
       <MovingImg title={title} img={img} />
-      <span className="text-primary font-semibold">{date}</span>
+      <span className="text-primary font-semibold sm:text-sm md:text-base">
+        {date}
+      </span>
     </motion.li>
   );
 };
@@ -78,7 +82,7 @@ const FeatureArticle = ({ title, img, time, sumary, link }) => {
         />
       </Link>
       <Link href={""} className="capitalize text-2xl font-bold my-2">
-        <h2 className="my-2 font-bold capitalize text-2xl underline-offset-2 hover:underline dark:text-light">
+        <h2 className="my-2 font-bold capitalize text-2xl underline-offset-2 hover:underline dark:text-light sm:text-sm md:text-base">
           {title}
         </h2>
       </Link>
@@ -101,9 +105,9 @@ const Articles = () => {
         <Layout>
           <AnimateText
             text={"Word can to change the world"}
-            className="mb-16"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:text-4xl"
           />
-          <ul className="grid grid-cols-2 gap-16">
+          <ul className="grid grid-cols-2 gap-16 sm:grid-cols-1">
             <FeatureArticle
               img={article}
               title={

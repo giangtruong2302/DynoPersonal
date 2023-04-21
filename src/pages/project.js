@@ -12,9 +12,13 @@ import { motion } from "framer-motion";
 const FramerImage = motion(Image);
 const Feature = ({ type, title, img, sumary, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:border-light dark:bg-dark">
-      <div className="absolute top-0 rounded-br-3xl -right-3 -z-10 w-[100%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light" />
-      <Link href={""} className="w-1/2 cursor-pointer rounded-lg">
+    <article
+      className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl dark:border-light dark:bg-dark
+    lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
+    "
+    >
+      <div className="absolute top-0 rounded-br-3xl -right-3 -z-10 w-[100%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
+      <Link href={""} className="w-1/2 cursor-pointer rounded-lg lg:w-full">
         <FramerImage
           src={img}
           alt=""
@@ -27,14 +31,16 @@ const Feature = ({ type, title, img, sumary, link, github }) => {
           transition={{ duration: 0.4 }}
         />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-bold text-xl">{type}</span>
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-bold text-xl xs:text-base">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
           className="underline-offset-2 hover:underline"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light">
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm">
             {title}
           </h2>
         </Link>
@@ -46,7 +52,7 @@ const Feature = ({ type, title, img, sumary, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:text-light"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:text-light sm:px-4 sm:text-base"
           >
             Visit Website
           </Link>
@@ -58,8 +64,8 @@ const Feature = ({ type, title, img, sumary, link, github }) => {
 
 const FeatureProject = ({ type, title, img, github, link }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 relative rounded-br-2xl dark:border-light dark:bg-dark">
-      <div className="absolute top-0 rounded-br-3xl -right-3 -z-10 w-[100%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light" />
+    <article className="w-full flex flex-col items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 relative rounded-br-2xl dark:border-light dark:bg-dark xs:p-4">
+      <div className="absolute top-0 rounded-br-3xl -right-3 -z-10 w-[100%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
       <Link href={""} className="w-full cursor-pointer rounded-lg">
         <FramerImage
           src={img}
@@ -70,7 +76,7 @@ const FeatureProject = ({ type, title, img, github, link }) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-bold text-xl dark:text-light">
+        <span className="text-primary font-bold text-xl dark:text-light lg:text-lg md:text-base">
           {type}
         </span>
         <Link
@@ -78,18 +84,18 @@ const FeatureProject = ({ type, title, img, github, link }) => {
           target="_blank"
           className="underline-offset-2 hover:underline"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold dark:text-light">
+          <h2 className="my-2 w-full text-left text-3xl font-bold dark:text-light lg:text-2xl">
             {title}
           </h2>
         </Link>
         <div className="flex items-center mt-2 justify-between w-full">
           <Link href={github} target="_blank">
-            <GithubIcon className="w-8 dark:bg-light p-2 rounded-full" />
+            <GithubIcon className="w-8 dark:bg-light p-2 rounded-full md:w-6" />
           </Link>
           <Link
             href={link}
             target="_blank"
-            className="ml-4 text-lg font-semibold underline dark:text-light"
+            className="ml-4 text-lg font-semibold underline dark:text-light md:text-base"
           >
             Visit Website
           </Link>
@@ -110,8 +116,11 @@ const Project = () => {
       <TransactionEffect />
       <div className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
-          <AnimateText text={"My projects"} className="mb-16" />
-          <div className="grid grid-cols-12 gap-24">
+          <AnimateText
+            text={"My projects"}
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:text-4xl"
+          />
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <Feature
                 type="Imagination Trumps Knowledge!"
@@ -124,7 +133,7 @@ const Project = () => {
                 github="github"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <FeatureProject
                 type="Imagination Trumps Knowledge!"
                 title="Crypto Screener Application"
@@ -133,7 +142,7 @@ const Project = () => {
                 github="github"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <FeatureProject
                 type="Imagination Trumps Knowledge!"
                 title="Crypto Screener Application"
@@ -142,7 +151,7 @@ const Project = () => {
                 github="github"
               />
             </div>
-            <div className="col-span-12">
+            <div className="col-span-12 ">
               <Feature
                 type="Imagination Trumps Knowledge!"
                 title="Crypto Screener Application"
@@ -154,7 +163,7 @@ const Project = () => {
                 github="github"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <FeatureProject
                 type="Imagination Trumps Knowledge!"
                 title="Crypto Screener Application"
@@ -163,7 +172,7 @@ const Project = () => {
                 github="github"
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <FeatureProject
                 type="Imagination Trumps Knowledge!"
                 title="Crypto Screener Application"
