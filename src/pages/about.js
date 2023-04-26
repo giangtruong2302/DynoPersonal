@@ -44,7 +44,7 @@ const About = () => {
       <div className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <AnimateText
-            text={"Passion fuels purposel"}
+            text={"About me ..."}
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
@@ -53,11 +53,11 @@ const About = () => {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I am Duong Truong Giang, a web developer and UI/UX designer
-                with a passion for creating beautiful, functional, and
-                user-centered digital experiences. With 2 years of experience in
-                the field. I am always looking for new and innovative ways to
-                bring my clients visions to life.
+                Hi, I am Duong Truong Giang, a web developer with a passion for
+                creating beautiful, functional, and user-centered digital
+                experiences. With 2 years of experience in the field. I am
+                always looking for new and innovative ways to bring my clients
+                visions to life.
               </p>
 
               <p className="my-4 font-medium">

@@ -50,28 +50,28 @@ const Experience = () => {
         />
         <ul className="w-full flex flex-col items-center justify-between ml-4 xs:ml-2">
           <Detail
-            position={" Software Engineer"}
-            company={"@Google"}
-            time={"2022-Present"}
-            address={" Mountain View, CA"}
+            position={"Frontend Developer"}
+            company={"@Exnodes Company"}
+            time={"March, 2022 - September, 2022 "}
+            address={"Tp. Ho Chi Minh"}
             work={
               "Worked on a team responsible for developing new features for Google of search engine including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization"
             }
           />
           <Detail
-            company={"@Google"}
+            company={"@Geniebook Company"}
             position={" Software Engineer"}
-            time={"2022-Present"}
-            address={" Mountain View, CA"}
+            time={"September, 2022 - Present"}
+            address={"Tp. Ho Chi Minh"}
             work={
               "Worked on a team responsible for developing new features for Google of search engine including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization"
             }
           />
           <Detail
-            company={"@Google"}
+            company={"@C2C Techhub"}
             position={" Software Engineer"}
-            time={"2022-Present"}
-            address={" Mountain View, CA"}
+            time={"March, 2023 - Present"}
+            address={"Tp.Ho Chi Minh"}
             work={
               "Worked on a team responsible for developing new features for Google of search engine including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization"
             }

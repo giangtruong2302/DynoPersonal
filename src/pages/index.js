@@ -54,6 +54,10 @@ export default function Home() {
             </motion.div>
             <div className="w-1/2 lg:text-center flex flex-col justify-center items-center self-center lg:w-full">
               <AnimateText
+                text={"Hi I'm Duong Truong Giang"}
+                className="!text-4xl xl:!text-4xl lg:!text-4xl md:!text-2xl sm:!text-xl xs:!text-lg"
+              />
+              <AnimateText
                 text={"Turning Vision Into Reality With Code And Design. "}
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:text-3xl "
               />
