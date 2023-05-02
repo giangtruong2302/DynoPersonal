@@ -7,6 +7,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import project from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/image1.png";
+import project2 from "../../public/images/projects/image2.png";
+import project3 from "../../public/images/projects/image3.png";
+import project4 from "../../public/images/projects/image4.png";
+
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
@@ -137,7 +142,7 @@ const Project = () => {
               <FeatureProject
                 type="Imagination Trumps Knowledge!"
                 title="Crypto Screener Application"
-                img={project}
+                img={project1}
                 link="link"
                 github="github"
               />
@@ -146,7 +151,7 @@ const Project = () => {
               <FeatureProject
                 type="Imagination Trumps Knowledge!"
                 title="Crypto Screener Application"
-                img={project}
+                img={project2}
                 link="link"
                 github="github"
               />
@@ -167,7 +172,7 @@ const Project = () => {
               <FeatureProject
                 type="Imagination Trumps Knowledge!"
                 title="Crypto Screener Application"
-                img={project}
+                img={project3}
                 link="link"
                 github="github"
               />
@@ -176,7 +181,7 @@ const Project = () => {
               <FeatureProject
                 type="Imagination Trumps Knowledge!"
                 title="Crypto Screener Application"
-                img={project}
+                img={project4}
                 link="link"
                 github="github"
               />
