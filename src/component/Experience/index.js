@@ -61,7 +61,7 @@ const Experience = () => {
           <Detail
             company={"@Geniebook Company"}
             position={" Software Engineer"}
-            time={"September, 2022 - Present"}
+            time={"September, 2022 - Mar 2023"}
             address={"Tp. Ho Chi Minh"}
             work={
               "Worked on a team responsible for developing new features for Google of search engine including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization"
@@ -70,7 +70,16 @@ const Experience = () => {
           <Detail
             company={"@C2C Techhub"}
             position={" Software Engineer"}
-            time={"March, 2023 - Present"}
+            time={"March, 2023 - August, 2023"}
+            address={"Tp.Ho Chi Minh"}
+            work={
+              "Worked on a team responsible for developing new features for Google of search engine including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization"
+            }
+          />
+          <Detail
+            company={"@Ahamove Company"}
+            position={" Software Engineer"}
+            time={"August, 2023 - Present"}
             address={"Tp.Ho Chi Minh"}
             work={
               "Worked on a team responsible for developing new features for Google of search engine including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization"

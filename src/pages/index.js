@@ -55,7 +55,7 @@ export default function Home() {
             <div className="w-1/2 lg:text-center flex flex-col justify-center items-center self-center lg:w-full">
               <AnimateText
                 text={"Hi I'm Duong Truong Giang"}
-                className="!text-4xl xl:!text-4xl lg:!text-4xl md:!text-2xl sm:!text-xl xs:!text-lg"
+                className="!text-4xl xl:!text-4xl lg:!text-4xl md:!text-2xl sm:!text-xl xs:!text-lg text-left"
               />
               <AnimateText
                 text={"Turning Vision Into Reality With Code And Design. "}
@@ -69,7 +69,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href={"/CV-DuongTruongGiang.pdf"}
+                  href={"/Middle_DuongTruongGiang_CV.pdf"}
                   target="_blank"
                   className="flex items-center bg-dark text-light p-2.5 px-6 rounded text-sm
                   font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-black dark:border-light md:p-2 md:px-4 md:text-base

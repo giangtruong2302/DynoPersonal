@@ -61,7 +61,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="top-0 z-1000 w-full px-32 py-8 flex items-center justify-between shadow-lg relative lg:px-16 md:px-12 sm:px-8 text-dark dark:text-light">
+    <header className="top-0 z-50 dark:bg-dark bg-white w-full px-32 py-8 flex items-center justify-between shadow-lg lg:px-16 md:px-12 sm:px-8 text-dark dark:text-light sticky">
       <button
         className="hidden lg:flex flex-col justify-center items-center fixed z-50 bg-dark dark:bg-light p-4 w-14 h-14 rounded-full"
         onClick={handleOpen}
@@ -91,7 +91,7 @@ const Navbar = () => {
         </nav>
         <nav className="  z-1000 flex gap-4 flex-wrap justify-center items-center ">
           <motion.a
-            href="/"
+            href="https://twitter.com/TrGiangDyno2302"
             target="_blank"
             whileHover={{ y: -2 }}
             className="w-6"
@@ -100,7 +100,7 @@ const Navbar = () => {
             <TwitterIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://github.com/giangtruong2302"
             target="_blank"
             whileHover={{ y: -2 }}
             className="w-6"
@@ -109,7 +109,7 @@ const Navbar = () => {
             <GithubIcon />
           </motion.a>
           <motion.a
-            href="/"
+            href="https://www.linkedin.com/in/giang-duong-2a5297229/"
             target="_blank"
             whileHover={{ y: -2 }}
             className="w-6"
