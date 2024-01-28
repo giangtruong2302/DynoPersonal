@@ -61,7 +61,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="top-0 z-50 dark:bg-dark bg-white w-full px-32 py-8 flex items-center justify-between shadow-lg lg:px-16 md:px-12 sm:px-8 text-dark dark:text-light sticky">
+    <header className="top-0 z-50 dark:bg-dark bg-white w-full px-32 py-8 flex items-center justify-between shadow-lg lg:px-16 md:px-12 sm:px-8 text-dark dark:text-light sticky md:hidden">
       <button
         className="hidden lg:flex flex-col justify-center items-center fixed z-50 bg-dark dark:bg-light p-4 w-14 h-14 rounded-full"
         onClick={handleOpen}
@@ -117,7 +117,7 @@ const Navbar = () => {
           >
             <LinkedInIcon />
           </motion.a>
-          <motion.a
+          {/* <motion.a
             href="/"
             target="_blank"
             whileHover={{ y: -2 }}
@@ -134,7 +134,7 @@ const Navbar = () => {
             whileTap={{ scale: 1.1 }}
           >
             <DribbbleIcon />
-          </motion.a>
+          </motion.a> */}
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`ml-3 flex items-center justify-center rounded-full p-1

@@ -1,5 +1,6 @@
 import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar";
+import NavbarMobile from "@/component/NavbarMobile";
 import "@/styles/globals.css";
 import { Montserrat } from "next/font/google";
 import Head from "next/head";
@@ -18,9 +19,10 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/images/profile/avaG copy.svg" />
       </Head>
       <main
-        className={`${montserrat.variable} font-mont bg-light w-full min-h-screen dark:bg-dark`}
+        className={`${montserrat.variable} font-mont bg-light w-full min-h-screen dark:bg-dark relative`}
       >
         <Navbar />
+        <NavbarMobile />
         <Component {...pageProps} />
         <Footer />
       </main>

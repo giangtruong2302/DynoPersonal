@@ -52,7 +52,7 @@ const Article = ({ img, title, date, link }) => {
     <motion.li
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
-      className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4
+      className="relative w-full p-4 py-6 my-4 rounded-xl flex md:flex-col md:gap-4 md:items-start items-center justify-between bg-light text-dark first:mt-0 border border-solid border-dark border-r-4 border-b-4
       sm:text-sm md:text-base
       "
     >
@@ -82,7 +82,7 @@ const FeatureArticle = ({ title, img, time, sumary, link }) => {
         />
       </Link>
       <Link href={""} className="capitalize text-2xl font-bold my-2">
-        <h2 className="my-2 font-bold capitalize text-2xl underline-offset-2 hover:underline dark:text-light sm:text-sm md:text-base">
+        <h2 className="my-2 font-bold capitalize text-2xl underline-offset-2 hover:underline dark:text-light sm:text-sm md:text-base xs:text-lg">
           {title}
         </h2>
       </Link>
@@ -107,7 +107,7 @@ const Articles = () => {
             text={"Word can to change the world"}
             className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:text-4xl"
           />
-          <ul className="grid grid-cols-2 gap-16 sm:grid-cols-1">
+          <ul className="grid grid-cols-2 lg:gap-8 md:gap-y-16 gap-16 sm:grid-cols-1">
             <FeatureArticle
               img={article}
               title={
